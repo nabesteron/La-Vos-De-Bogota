@@ -1,4 +1,3 @@
-import './App.css';
 import Download from './components/Download';
 import Experience from './components/Experience';
 import Footer from './components/Footer';

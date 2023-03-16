@@ -6,13 +6,13 @@ function Search() {
   const [elementIsVisible, setElementIsVisible] = useState(false);
   const bg = {
     true: {
-      left: "-44rem",
+      left: "-53rem",
     },
     false: {
       left: "-50rem",
     },
   };
-  const redimg = {
+  const redImg = {
     true: {
       left: "18rem",
     },
@@ -20,7 +20,7 @@ function Search() {
       left: "16rem",
     },
   };
-  const musicimg = {
+  const musicImg = {
     true: {
       left: "2rem",
     },
@@ -41,7 +41,7 @@ function Search() {
           }}
           src={require("../img/backgraphics.png")}
           alt=""
-          className="absolute top-[22rem] left-[-47rem]"
+          className="absolute top-[22rem] left-[-20rem]"
         />
         <motion.img
           src={require("../img/d1.png")}
@@ -54,7 +54,7 @@ function Search() {
           className="w-[9rem] absolute top-[32.7rem] left-[7rem]"
         />{" "}
         <motion.img
-          variants={redimg}
+          variants={redImg}
           animate={`${elementIsVisible}`}
           transition={{
             duration: 1.2,
@@ -65,7 +65,7 @@ function Search() {
           className="w-[9rem] top-[33rem] left-[17rem] absolute"
         />
         <motion.img
-          variants={musicimg}
+          variants={musicImg}
           animate={`${elementIsVisible}`}
           transition={{
             duration: 1,

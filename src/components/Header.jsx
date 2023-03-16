@@ -1,6 +1,7 @@
 import React from "react";
 import CenterMenu from "./CenterMenu";
 
+
 function Header() {
   const buttonStyle =
     "border-[2px] rounded-[10px] border-[#232A4E] px-[25px] py-[7px]";
@@ -8,9 +9,9 @@ function Header() {
     <div className="header bg-[#081730] flex items-center justify-between px-[5rem] pt-[2.4rem] text-[0.8rem]">
       {/* logo */}
       <img
-        src={require("../img/MuzicLogo.png")}
-        alt=""
-        className="logo  w-[42px] h-[42px]"
+        src={require("../img/logo.svg").default}
+        alt="logo"
+        className="logo  w-[300px] h-[150px] "
       />
       {/* side menu */}
       <CenterMenu />

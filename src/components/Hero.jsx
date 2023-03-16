@@ -2,15 +2,16 @@ import { React, useState } from "react";
 import DownloadAds from "./DownloadAds";
 import VisibilitySensor from "react-visibility-sensor";
 import { motion } from "framer-motion";
+import Mic1 from "../img/radio-mic1.svg"
 
 function Hero() {
   const [elementIsVisible, setElementIsVisible] = useState(false);
   const bg = {
     true: {
-      left: "7rem",
+      left: "-1rem",
     },
     false: {
-      left: "19rem",
+      left: "22rem",
     },
   };
   const musicPlayer = {
@@ -66,9 +67,10 @@ function Hero() {
             variants={bg}
             animate={`${elementIsVisible}`}
             transition={{ duration: 1, type: "ease-out" }}
-            src={require("../img/backgraphics.png")}
-            alt=""
-            className="absolute top-[-8rem] left-[19rem]"
+            src={Mic1} 
+            alt="mic1"
+            
+            className="absolute top-[-20rem] left-[19rem]"
           />
           <img
             src={require("../img/p 1.png")}
